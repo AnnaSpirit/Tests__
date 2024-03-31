@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+</head>
+
+<body>
+    <h1>Register</h1>
+    <form method="POST">
+        First Name: <input type="text" name="firstname"><br>
+        Last Name: <input type="text" name="lasttname"><br>
+        Email: <input type="email" name="email"><br>
+        <!-- Updated min to minlength (min is used only for range inputs. Visit here for more info: https://www.w3schools.com/tags/att_input_maxlength.asp) -->
+        Password: <input type="password" name="password" minLength="5"><br>
+        Birthday: <input type="date" name="birthday"><br>
+        Gender:<br>
+        <!-- The radio group must have share the same name to be treated as a group. Once the radio group is created, selecting any radio button in that group automatically deselects any other selected radio button in
+                the same group. You can have as many radio groups on a page as you want, as long as each group has its own name. -->
+        <input type="radio" name="gender" value="Male">Male<br>
+        <input type="radio" name="gender" value="Female">Female<br>
+        <input type="radio" name="gender" value="Other">Other<br>
+        Pets: <br>
+        <!-- ******
+            See if you can play around with the below checkboxes and add the "value" attribute. How will this change the query string when you click "Register"?
+        ***** -->
+        <input type="checkbox" name="cat"> Cat<br>
+        <input type="checkbox" name="dog"> Dog<br>
+        Cars: <br>
+        <select name="cars">
+            <option value="Audi" name="Audi">Audi</option>
+            <option value="Tesla" name="Tesle">Tesla</option>
+            <option value="Volvo" name="Volva">Volvo</option>
+        </select><br>
+        <input type="submit" value="Register!">
+        <input type="reset">
+        <br>
+        <br>
+
+        <!-- Utilisation d'un bouton pour revenir sur la page index.html -->
+        <button type="button" onclick="window.location.href='index.html';">GO BACK !!</button>
+    </form>
+</body>
+
+</html>
+
+<!-- query strings -->
+
+<!-- Pas de données dans la barre d'adresse comme avec la methode "GET" Ligne 10. -->
+
+
+<!-- The method attribute tells the form how the data is going to be sent: it can have the value get, which is default, and
+latches the form information onto a web address, or post, which (essentially) invisibly sends the form’s information.
+
+get is used for shorter chunks of non-sensitive information - you might see the information you have submitted in a web
+site’s search to appear in the web address of its search results page, for example.
+
+post is used for lengthier, more secure submissions, such as in contact forms. -->

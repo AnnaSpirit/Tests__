@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+</head>
+
+<body>
+    <h1>Register</h1>
+    <form method="GET">
+        First Name: <input type="text" name="firstname"><br>
+        Last Name: <input type="text" name="lasttname"><br>
+        Email: <input type="email" name="email"><br>
+        <!-- Updated min to minlength (min is used only for range inputs. Visit here for more info: https://www.w3schools.com/tags/att_input_maxlength.asp) -->
+        Password: <input type="password" name="password" minLength="5"><br>
+        Birthday: <input type="date" name="birthday"><br>
+        Gender:<br>
+        <input type="radio" name="gender" value="Male">Male<br>
+        <input type="radio" name="gender" value="Female">Female<br>
+        <input type="radio" name="gender" value="Other">Other<br>
+        Pets: <br>
+        <!-- ******
+            See if you can play around with the below checkboxes and add the "value" attribute. How will this change the query string when you click "Register"?
+        ***** -->
+        <input type="checkbox" name="cat"> Cat<br>
+        <input type="checkbox" name="dog"> Dog<br>
+        Cars: <br>
+        <select name="cars">
+            <option value="Audi" name="Audi">Audi</option>
+            <option value="Tesla" name="Tesle">Tesla</option>
+            <option value="Volvo" name="Volva">Volvo</option>
+        </select><br>
+        <input type="submit" value="Register!">
+        <input type="reset">
+        <br>
+        <br>
+
+        <!-- Utilisation d'un bouton pour revenir en arrière -->
+        <button type="button" onclick="window.location.href='index.html';">GO BACK !!</button>
+    </form>
+</body>
+
+</html>
+
+<!-- query strings -->
+?firstname=asd
+&lasttname=sfgdfg
+&email=fake%40gmail.fr
+&password=165432
+&birthday=2019-04-12
+&gender=Female
+&cat=on
+&dog=on
+&cars=Tesla

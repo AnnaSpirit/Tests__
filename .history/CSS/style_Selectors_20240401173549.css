@@ -1,0 +1,14 @@
+/* Universal Selector */
+/* * {
+    color: brown;
+} */
+footer p {
+    background-color: rgb(211, 146, 146);
+}
+h3{
+    color: rgb(218, 137, 14);
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 20px;
+    color: #DA890E;
+    text-decoration: underline rgb(218, 137, 14);
+}

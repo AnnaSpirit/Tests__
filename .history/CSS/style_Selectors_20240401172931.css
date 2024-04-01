@@ -1,0 +1,10 @@
+/* Universal Selector */
+/* * {
+    color: brown;
+} */
+footer p {
+    background-color: rgb(211, 146, 146);
+}
+h3{
+    color: blanchedalmond;
+}

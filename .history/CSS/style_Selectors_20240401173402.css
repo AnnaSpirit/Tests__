@@ -1,0 +1,15 @@
+/* Universal Selector */
+/* * {
+    color: brown;
+} */
+footer p {
+    background-color: rgb(211, 146, 146);
+}
+h3{
+    color: rgb(218, 137, 14);
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 20px;
+    color: #DA890E;
+    text-decoration: underline rgb(218, 137, 14);
+
+}

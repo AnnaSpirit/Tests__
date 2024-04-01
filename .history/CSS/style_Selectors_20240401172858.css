@@ -1,0 +1,7 @@
+/* Universal Selector */
+/* * {
+    color: brown;
+} */
+footer p {
+    background-color: rgb(211, 146, 146);
+}

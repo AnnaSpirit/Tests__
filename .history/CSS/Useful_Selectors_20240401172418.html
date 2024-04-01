@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useful Selectors</title>
+    <link rel="stylesheet" href="style_Selectors.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to our website</h1>
+        <h4>We're so happy to have you</h4>
+    </header>
+    <section>
+        <ul> Here are some reasons you should keep reading....
+            <li>You're learning things!</li>
+            <li>CSS is fun!</li>
+            <li>Well.....not always, but it is essential to know!</li>
+        </ul>
+    </section>
+    <section>
+        <h3 style="padding-left: 20px;"> &#9724; Each CSS rule consists of :</h3>
+            <p style="padding-left: 40px;"> &#9744; a selector - how we find the element/elements to target</p>
+            <p style="padding-left: 40px;"> &#9744; and a pair of curly braces, a.k.a. <b>{}</b>.</p>
+            <span > <pre style="border: 2px solid blue; margin-right: 310px">
+                body {
+                    font-size: 14px;
+                    color: navy;
+                }</pre></span>
+    <p>Inside of <b>{ }</b> we specify properties and values; we separate the two with a <b>:</b>, and after the value we add a semi-colon <b>;</b>.</p>
+            <p style="padding-left: 40px;"> &#9744; To add multiple selectors we separate each one by a comma <b>,</b></p>
+    <span>
+        <pre style="border: 2px solid blue; margin-right: 310px">
+            p, a {
+                font-size: 14px;
+                color: navy;
+            }</pre>
+        </span>
+        <h3 style="padding-left: 20px;"> &#9724; Universal Selector</h3>
+        <p style="padding-left: 40px;">&#9744; We use the asterisk <b>*</b>, to select all the elements of the HTML page.</p>
+        <p style="padding-left: 40px;">&#9744; The selector below will find ALL the tags inside of the HTML page and set their font color to blue.</p>
+    <span>
+        <pre style="border: 2px solid blue; margin-right: 310px">
+                * {
+                    color: blue;
+                }</pre>
+    </span>
+    <h3 style="padding-left: 20px;"> &#9724;Descendant Selector</h3>
+    <pstyle="padding-left: 40px;">&#9744; </pstyle=>
+    <pstyle="padding-left: 40px;">&#9744; </pstyle=>
+    </section>
+    <hr>
+    <footer>
+        
+        <p>
+            Thanks for checking out this page!
+            <a href="#">Here is a link that goes nowhere! It's for showing you stuff with CSS......we promise</a>
+        </p>
+    </footer>
+</body>
+</html>

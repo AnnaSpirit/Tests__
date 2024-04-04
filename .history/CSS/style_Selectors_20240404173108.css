@@ -1,0 +1,60 @@
+body{
+    background-image: url(../sources/Fleurs_hiver.avif);
+    padding-right: 250px;
+}
+
+/* .text-node {
+    white-space: nowrap;
+    /* Empêche le saut de ligne */
+}
+.text-node.hidden {
+    display: none;
+    Cache complètement les nœuds texte
+} */
+
+h1+h4 {
+    background-color: rgb(178, 178, 248);
+}
+
+section>ul>li {
+    background-color: rgba(231, 128, 52, 0.40);
+}
+h3{
+    color: rgb(218, 137, 14);
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 20px;
+    color: #DA890E;
+    text-decoration: underline rgb(218, 137, 14);
+    padding-left: 20px;
+}
+.classblue{
+    border: 2px solid blue;
+    width: 320px;
+    margin-left: 132px;
+}
+#box_pseudo{
+    border: 4px solid green;
+}
+
+button {
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    background-color: yellow;
+    color: rgb(125, 45, 33);
+}
+footer p {
+    background-color: rgb(113, 94, 80);
+}
+a[href="#"] {
+    color: rgb(233, 103, 233);
+    /* font-weight: bold; */
+    font-style: italic;
+    letter-spacing: 15px;
+}
+/* pre>ul>li {
+    background-color: white;
+} */
+

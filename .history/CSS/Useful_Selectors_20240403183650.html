@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useful Selectors</title>
+    <link rel="stylesheet" href="style_Selectors.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to our website</h1>
+        <h4>We're so happy to have you</h4>
+    </header>
+    <section>
+        <ul> Here are some reasons you should keep reading....
+            <li>You're learning things!</li>
+            <li>CSS is fun!</li>
+            <li>Well.....not always, but it is essential to know!</li>
+        </ul>
+    </section>
+    <section>
+        <h3>&#9724; Each CSS rule consists of :</h3>
+            <p style="padding-left: 40px;"> &#9744; a selector - how we find the element/elements to target</p>
+            <p style="padding-left: 40px;"> &#9744; and a pair of curly braces, a.k.a. <b>{}</b>.</p>
+    <span> 
+        <pre style="border: 2px solid blue; margin-right: 310px">
+            body {
+                font-size: 14px;
+                color: navy;
+            }</pre></span>
+    <p>Inside of <b>{ }</b> we specify properties and values; we separate the two with a <b>:</b>, and after the value we add a semi-colon <b>;</b>.</p>
+            <p style="padding-left: 40px;"> &#9744; To add multiple selectors we separate each one by a comma <b>,</b></p>
+    <span>
+        <pre style="border: 2px solid blue; margin-right: 310px">
+            p, a {
+                font-size: 14px;
+                color: navy;
+            }</pre>
+        </span>
+        <h3>&#9724; Universal Selector</h3>
+        <p style="padding-left: 40px;">&#9744; We use the asterisk <b>*</b>, to select all the elements of the HTML page.</p>
+        <p style="padding-left: 40px;">&#9744; The selector below will find ALL the tags inside of the HTML page and set their font color to blue.</p>
+    <span>
+        <pre style="border: 2px solid blue; margin-right: 310px">
+            * {
+                color: blue;
+            }</pre>
+    </span>
+    <h>&#9724;Descendant Selector</h3>
+    <p style="padding-left: 40px;">&#9744; The descendant selector matches all elements that are descendants of a specified element.</p>
+    <p style="padding-left: 40px;">&#9744; The selector below will find all of the p tags inside of a footer tag (read the selectors from right to left).</p>
+    <span>
+        <pre style="border: 2px solid blue; margin-right: 310px">
+            footer p {
+                background-color:red;
+            }</pre>
+    </span>
+    <h3>&#9724;Adjacent Selector</h3>
+    <p style="padding-left: 40px;">&#9744; The adjacent selector finds all elements that are <b>directly adjacent</b> to some other specified element. The selector below
+    will find all the <b>h4</b> tags that are directly adjacent to an <b>h1</b> tag..</p>
+    <span>
+        <pre style="border: 2px solid blue; margin-right: 310px">
+            h1+h4 {
+                background-color:blue;
+            }</pre>
+    </span>
+    <h3>&#9724;Direct child selector</h3>
+    <p style="padding-left: 40px;">&#9744; This is commonly confused with the descendant selector. The direct child selector matches all elements that are <b>direct
+    children</b> - not just descendants - of a specified element. The selector below will find all <b>li</b>s which are direct children
+    of a <b>ul</b>.</p>
+    <span>
+        <pre style="border: 2px solid blue; margin-right: 310px">
+            ul > li {
+                background-color: green;
+            }</pre>
+    </span>
+    <h3>&#9724;Attribute Selector</h3>
+    <p style="padding-left: 40px;">&#9744; The attribute selector finds elements based on the value of some attribute. The selector below will find all <b>a</b> tags
+    whose <b>href</b> attribute is set to “<b>#</b>”.</p>
+    <span>
+        <pre style="border: 2px solid blue; margin-right: 310px">
+            a[href="#"] {
+                background-color:blue;
+            }</pre>
+    </span>
+    <h3>&#9724;Pseudo Class</h3>
+    <p>A CSS pseudo-class is a <b> keyword added to a selector</b> that specifies a special state of the selected element(s)</p>
+    <p style="padding-left: 40px;">&#9744; Style an element when a user mouses over it</p>
+    <p style="padding-left: 40px;">&#9744; Style visited and unvisited links differently.</p>
+    <p style="padding-left: 40px;">&#9744; Style an element when it gets focus.</p>
+    <span>
+        <pre style="border: 2px solid blue; margin-right: 310px">
+        selector:pseudo-class {
+            property: value;
+        }</pre>
+    </span>
+    <span>
+        <pre style="border: 4px solid green;">
+            <ul> <u>Quelques exemples</u>
+                <li>:hover : Cette pseudo-classe permet de définir un style lorsqu'un élément est survolé par le pointeur de la souris.</li>
+                <ul>
+                    <li style="list-style: none;"><button>Click Here (Hover)</button></li>
+<!-- Dans Firefox (et dans d'autres navigateurs également), lors du rendu d'une page HTML, les espaces blancs, les retours à
+la ligne et les espaces de tabulation dans le code HTML sont interprétés comme des "nœuds texte" dans le modèle DOM
+(Document Object Model). Cela signifie que chaque espace, saut de ligne ou espace de tabulation est considéré comme un
+nœud texte distinct dans l'arbre DOM de la page.
+
+Ces "nœuds texte ne contenant que des espaces" sont ajoutés au DOM pour refléter fidèlement la structure du code HTML
+original. Cela peut être important pour la mise en forme et la présentation visuelle de la page, car les espaces blancs
+dans le code HTML peuvent influencer la mise en page des éléments, en particulier dans des situations comme le formatage
+de texte ou la disposition de tableaux.
+
+Cependant, ces espaces blancs peuvent également causer des problèmes lors du développement web, surtout lorsqu'ils sont
+indésirables. Par exemple, des espaces blancs inattendus entre les éléments HTML peuvent créer des espaces visibles
+indésirables sur la page. Dans de tels cas, les développeurs peuvent utiliser différentes techniques pour éviter que ces
+espaces ne soient inclus dans le rendu final, comme la compression du HTML ou l'utilisation de techniques CSS
+appropriées.
+
+En résumé, Firefox (et d'autres navigateurs) ajoutent ces "nœuds texte ne contenant que des espaces" pour représenter
+fidèlement la structure du code HTML original, mais cela peut parfois être source de confusion ou de problèmes lors du
+développement web. -->
+                </ul>
+                <li>:active : Cette pseudo-classe permet de définir un style lorsqu'un élément est activé (par exemple, lorsqu'un bouton de
+                la souris est enfoncé sur un lien).</li>
+                <li>:focus : Cette pseudo-classe permet de définir un style lorsqu'un élément a le focus, c'est-à-dire qu'il est sélectionné
+                par l'utilisateur (par exemple, lorsqu'un champ de formulaire est sélectionné).</li>
+                <li>:first-child : Cette pseudo-classe permet de cibler le premier enfant d'un élément parent.</li>
+                <li>:last-child : Cette pseudo-classe permet de cibler le dernier enfant d'un élément parent.</li>
+                <li>:nth-child() : Cette pseudo-classe permet de cibler les éléments en fonction de leur position dans la liste des enfants
+                d'un élément parent en utilisant une formule mathématique.</li>
+                <li>:nth-of-type() : Cette pseudo-classe permet de cibler les éléments en fonction de leur type et de leur position parmi
+                les éléments de ce type dans un élément parent.</li>
+            </ul>
+        </pre>
+    </span>
+
+    <h3>&#9724;First & Last Child</h3>
+    <p style="padding-left: 40px;">&#9744; The <b>:first-child</b> and <b>:last-child</b> CSS pseudo-class find all elements which are the first (or last, respectively) children
+    of their parents. The selector below will find all the <b>li</b>‘s which are the first children of their parents.</p>
+    <span>
+        <pre style="border: 2px solid blue; margin-right: 310px">
+        li:first-child {
+            background-color:blue;
+        }</pre>
+    </span>
+
+    <h3>&#9724;n-th child</h3>
+    <p style="padding-left: 40px;">&#9744; This is a sort of generalization of the selectors above. <b>nth-child</b> CSS pseudo-class will find all elements which are the
+    nth children of their parents, for some specified value of <b>n</b>. The selector below will find all the <b>li</b>‘s which are the second children of their parents.</p>
+    <span>
+        <pre style="border: 2px solid blue; margin-right: 310px">
+                a[href="#"] {
+                    background-color:blue;
+                }</pre>
+    </span>
+    </section>
+    <hr>
+    <footer>
+        
+        <p>
+            Thanks for checking out this page!
+            <a href="#">Here is a link that goes nowhere! It's for showing you stuff with CSS......we promise</a>
+        </p>
+    </footer>
+</body>
+</html>

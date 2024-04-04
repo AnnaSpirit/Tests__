@@ -1,0 +1,15 @@
+/* Selector {
+    Property: value;
+} */
+body{
+    background-image: url(../sources/Mer-sable-algues.avif);
+}
+h2{
+    color: red;
+    text-align: center;
+    border: 5px dashed rgb(182, 19, 182);
+}
+p{
+    color: black;
+    si
+}

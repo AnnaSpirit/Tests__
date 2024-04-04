@@ -8,8 +8,7 @@ body{
 
 li{
     list-style: none;
-    display: inline-block;
-    cursor: pointer;
+    display: inline-block;cursor: pointer;
 }
 h2{
     color: red;
